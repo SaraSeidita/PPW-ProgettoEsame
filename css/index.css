@@ -1,0 +1,885 @@
+/* SITO WEB */
+
+/* Palette colori */
+/*
+(Arancione - Bianco - Nero)
+Sfondo: #ffa333
+Articoli: #ffe2bf
+Sfondo testi pagina Giappone - Viaggi: #ffba66
+Testi: #202020
+Titoli: #202020
+Sottotitoli: #202020
+Bordi: #202020
+*/
+
+/* BODY */
+
+body {
+	margin: 0; padding: 0; background-color: #ffa333;
+}
+
+/* HEADER */
+
+header {
+	background-color: rgb(250, 250, 250, 0.6);
+	padding-bottom: 7%;
+	color: white;
+	text-align: center;
+	padding: 0;
+	padding-bottom: 8%;
+	margin-top: 0;
+	border-bottom: 2px groove #202020;
+}
+
+header img {
+	width: 170px;
+	float: right;
+	display: inline-block;
+	height: auto;
+}
+
+/* MENU */
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	z-index: 1;
+	top: 0;
+	position: fixed;
+	left: -0;
+	opacity: 8;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+	color: white;
+	background-color: #ffa333;
+	border: 1px groove #202020;
+	border-left: none;
+}
+
+.sidenav a {
+	font-weight: bold;
+	font-size: 20px;
+	color: black;
+	display: inline-block;
+	padding: 14px 16px;
+	text-align: center;
+	opacity: 20;
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+}
+
+.sidenav a:hover {color: white; text-shadow: 1px 1px 1px black;}
+
+#btn {
+	color: black;
+	font-size: 40px;
+	position: absolute;
+	top: 0;
+	left: 25px;
+	border: none;
+	margin-top: 10px;
+	margin-right: 50px;
+	background: transparent;
+	outline: none;
+}
+
+#btn:hover {cursor: pointer; text-shadow: 0.5px 0.5px 0.5px purple; border: transparent;}
+
+.chiudi {
+	position: absolute;
+   top: 0;
+   left: 25px;
+   font-size: 40px;
+   margin-right: 50px;
+   border: transparent;
+   margin-top: 10px;
+   color: black;
+   background-color: transparent;
+	outline: none;
+}
+
+.chiudi:hover {
+	cursor: pointer;
+	color: white;
+	text-shadow: 0.5px 0.5px 0.5px black;
+	border: transparent;
+}
+
+
+/* ARTICLE */
+
+.articoloIndex {
+	width: 70%;
+	height: 55%;
+	float: left;
+	margin-left: 10%;
+	margin-top: 4%;
+	margin-right: 0;
+	margin-bottom: 3%;
+	border: 2px groove #202020;
+	border-radius: 5px;
+	padding-top: 2%;
+	padding-right: 6%;
+	padding-left: 4%;
+	padding-bottom: 4%;
+	background-color: #ffe2bf;
+	color: black;	
+}
+
+article {
+	margin-top: 5px;
+	color: #202020;
+	background-color: rgb(250, 250, 250, 0.8);
+	border: 2px groove #202020;
+	padding-top: 3%;
+	padding-bottom: 5%;
+	padding-right: 2%;
+	padding-left: 2%;
+	margin-right: 5%;
+	margin-left: 5%;
+	margin-top: 2%;
+}
+
+/* PAGINA INDEX */
+
+h1 {
+	font-family: 'Great Vibes', cursive;
+	margin: 0;
+	font-size: 50px;
+	color: #202020;
+}
+
+p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+	letter-spacing: 2px;
+}
+
+
+q {
+	font-family: 'Raleway', sans-serif;
+	font-size: 125%;
+	font-style: italic;
+	color: #202020;
+	text-align: center;
+	margin-left: 30%;
+}
+
+cite {
+	font-family: 'Great Vibes', cursive;
+	font-size: 110%;
+	font-weight: bolder;
+	text-align: right;
+	margin-left: 80%;
+
+}
+
+/* calendario 2019 */
+
+h2 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+	text-align: center;
+	letter-spacing: 2px;
+	margin-top: 5%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background-color: rgb(250, 250, 250, 0.7);
+	border-left: groove 9px black;
+	border-right: groove 9px black;
+	border-top: groove 1px black;
+	border-bottom: groove 1px black;
+}
+
+h3 {
+	display: inline-flex;
+	margin-top: 7%;
+	margin: 2%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 400px;
+  height: 240px;
+  margin: 3%;
+  float: left;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+  margin-left: 8%;
+}
+
+.container:hover .image {
+  opacity: 0.6;
+}
+
+.container:active .image {
+	transform: translateY(4px);
+  	box-shadow: 3px 3px 2px #666;
+}
+
+/* Galleria fotografica */
+
+#foto {
+	width: 50%;
+	height: 300px;
+	margin-left: 25%;
+	margin-top: 2%;
+	border: 4px black solid;
+}
+
+/* pulsanti */
+
+.gall {
+	margin-left: 20.8%;
+	margin-top: 15px;
+	background-color: rgb(2, 4, 2, 0.9);
+	color: white;
+	border: none;
+	cursor: pointer;
+	border-radius: 50%;
+	outline: none;
+	height: 50px;
+	width: 50px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.gall:active {
+	transform: translateY(4px);
+  	box-shadow: 3px 3px 2px #666;
+}
+
+/* PAGINA GIAPPONE */
+
+.h1Giappone {
+	font-family: 'Great Vibes', cursive;
+	font-size: 50px;
+	margin-top: 5%;
+	text-align: center;
+	color: #202020;
+}
+
+/* h4 - pagina Giappone - come calendario pagina Index ma con qualche differenza */
+
+h4 .image {
+  opacity: 1;
+  display: block;
+  width: 300px;
+  height: auto;
+  float: left;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border: 1px #202020 solid;
+}
+
+h4 .container {
+  position: relative;
+  width: 50%;
+}
+
+h4 .container:hover .image {opacity: 0.8;}
+
+.imagine {cursor: pointer;}
+
+/* titoli, sottotitoli, testo */
+
+h6 {
+	width: auto;
+	text-align: justify;
+	margin: 90px;
+	font-size: 20px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 5%;
+	color: #202020;
+	font-family: 'Raleway', sans-serif;
+}
+
+.titolo {
+	color: #202020;
+	text-align: center;
+	font-size: 60px;
+	font-family: 'Great Vibes', cursive;
+	margin-bottom: 5%;
+}
+
+.sottotitolo {
+	color: #202020;
+	font-size: 40px;
+	text-align: right;
+	font-family: 'Great Vibes';
+}
+
+.testoGiappone {
+		width: 80%;
+		height: 100%;
+		margin: 5%;
+		padding: 3%;
+		padding-bottom: 8%;
+		background-color: #ffba66;
+		border: #202020 2px solid;
+		color: #202020;
+		word-spacing: 0;
+		letter-spacing: 0.5%;
+		margin-left: 8%;
+}
+
+/* Storia del giappone */
+
+.imgStoria {
+	width: 20%;
+	height: 20%;
+	float: left;
+	margin: 2%;
+}
+
+.imgStoria2 {
+	width: 20%;
+	height: 20%;
+	float: right;
+	margin: 2%;
+}
+
+.imgStoria3 {
+	width: 45%;
+	height: auto;
+	float: left;
+	margin: 2%;
+}
+
+.imgStoria4 {
+	width: 30%;
+	height: auto;
+	float: right;
+	margin: 1%;
+	margin-left: 2%;
+}
+
+/* Piatti tipici */
+
+#testo2 {
+	 width: 90%;
+	 margin-top: 5%;
+}
+.sezioneCibo {
+	display: inline-block;
+   padding: 1%;
+	margin: 0;
+}
+
+.imgCibo {
+	width: 300px;
+	height: 300px;
+	margin: 1%;
+	border: black 2px solid;
+}
+
+.titoloCibo {
+	font-family: 'Great vibes', cursive;
+	font-size: 40px;
+	color: #202020;
+	margin: 1%;
+	display: inline;
+}
+
+h6 .testo {
+	margin-bottom: 15%;
+	padding-bottom: 10%;
+}
+
+h4 {
+	display: inline-flex;
+	margin: 3%;
+	margin-top: 5%;
+	margin-left: 3%;
+}
+
+/* img luoghi tipici */
+
+#imgGiappone {
+	width: 45%;
+	height: auto;
+	display: inline-block;
+	text-align: center;
+	float: left;
+	margin: 3%;
+}
+
+#imgGiappone2  {
+	width: 45%;
+	height: auto;
+	display: inline-block;
+	text-align: center;
+	float: left;
+	margin: 3%;
+}
+
+/* PAGINA VIAGGI */
+
+/* h1 viaggi */ 
+
+.h1Viaggi {
+	text-align: center;
+	margin-top: 5%;
+	font-size: 50px;
+	color: #202020;
+}
+
+.imgViaggi {
+	width: 200px;
+	height: auto;
+	margin: 1%;
+	margin-left: 6%;
+	margin-top: 4%;
+	text-align: center;
+	cursor: pointer;
+}
+
+.imgViaggi:hover {background-color: #ffba66;}
+
+.info {
+	display: none;
+}
+
+.titoloViaggi {
+	font-family: 'Anton', sans-serif;
+	font-size: 50px;
+	text-align: center;
+	margin-top: 5%;
+	color: #202020;
+}
+
+.sottotitoloViaggi {
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	font-variant: small-caps;
+	font-weight: 600;
+	color: #202020;
+	text-align: left;
+	margin: 2%;
+	padding: 2%;
+	border: double #202020 2px;
+	letter-spacing: 0;
+	word-spacing: 0;
+	background-color: #ffa940;
+}
+
+.viaggi {
+	width: 45%;
+	font-family: 'Raleway', sans-serif;
+	font-size: 17px;
+	font-weight: bold;
+	margin-left: 3%;
+	border: double #202020 2px;
+	color: #202020;
+	padding: 2%;
+	background-color: #ffba66;
+	margin: 1%;
+	word-spacing: 2px;
+	letter-spacing: 1px;
+}
+
+.imgViaggi2 {
+	display: inline-block;
+	float: right;
+	margin: 1%;
+	width: 430px;
+	margin-bottom: 5%;
+	margin-right: 2%;
+	height: auto;
+}
+
+.titoloViaggi2 {
+	font-family: 'Anton', sans-serif;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 5%;
+	color: #202020;
+}
+
+
+/*TABELLA pagina Viaggi*/
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	font-family: 'Raleway', sans-serif;
+	color: #202020;
+}
+
+table, td, th {
+	border: 2px double #202020;
+}
+
+th {
+	padding: 15px 30px;
+	font-variant: small-caps;
+	color: black;
+	font-size: 20px;
+	background-color: #ffba66;
+
+}
+
+td {
+	height: 50px;
+	vertical-align: bottom;
+	padding: 23px 40px;
+	font-size: 18px;
+}
+
+
+/* ABOUT */
+
+.about {
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0;
+	text-align: center;
+}
+
+.about2 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0;
+	padding: 3%;
+	text-align: left;
+	display: inline;
+
+}
+
+.titoloAbout2 {
+	text-align: right;
+	width: 40%;
+	font-family: 'Anton', sans-serif;
+	font-weight: lighter;
+	color: #202020;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+.testoAbout {
+	width: 70%;
+	margin-left: 25%;
+	margin-top: 3%;
+	margin-bottom: 2%;
+}
+
+.about li {
+	color: #202020;
+	text-align: left;
+	list-style: square inside;
+}
+
+.about a {
+	text-decoration: none;
+	color: purple;
+	font-variant: small-caps;
+}
+
+.titoloAbout {
+	color: #202020;
+	text-align: left;
+	font-size: 40px;
+	font-family: 'Great Vibes', cursive;
+	margin-bottom: 2%;
+}
+
+/* PAGINA QUIZ */
+
+.quiz {
+	padding: 5%;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	border: 1px #202020 groove;
+	border-radius: 20px;
+	background-image: url("./img/quiz.png");
+	background-size: 1200px 700px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+.titoloQuiz {
+	color: #202020;
+	font-size: 50px;
+	margin-bottom: 1%;
+	font-family: 'Anton', sans-serif;
+	font-weight: lighter;
+}
+
+.testoQuiz {
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	color: #202020;
+}
+
+.testoDomanda {
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+	color: #202020;
+}
+
+.testoDomandaCorrente {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.risposte {
+	font-size: 20px;
+}
+
+.risultato {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#avantiquiz {
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	margin: 1%;
+	background-color: #202020;
+	color: white;
+	margin-left: 2%;
+	margin-top: 3%;
+	outline: none;
+}
+
+#avantiquiz:active {
+	 transform: translateY(4px);
+  	 box-shadow: 4px 5px 2px #666;
+}
+
+#inizia {
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	margin: 1%;
+	margin-top: 3%;
+	background-color: #202020;
+	color: white;
+}
+
+#inizia:active {
+	 transform: translateY(4px);
+  	 box-shadow: 4px 5px 2px #666;
+}
+
+/* Fonte */
+
+#fonte {
+	font-size: 16px;
+}
+
+#fonte a {
+	color: black;
+}
+
+#fonte a:hover {
+	color: #ff8c00;
+}
+/* FOOTER */
+
+footer {
+	clear: both;
+	margin-top: 50px;
+	padding: 30px;
+	padding-top: 0;
+	border-top: 2px groove #202020;
+	background-color: rgb(250, 250, 250, 0.6);
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	text-align: center;
+}
+
+/* RESPONSIVE */
+
+/* DISPOSITIVI MOBILE */
+
+@media screen and (max-width: 760px) {
+	
+	/*pagina Index*/
+	header {
+		padding-bottom: 23%;
+	}
+	#foto {
+		height: 200px;
+		width: 100%;
+		margin-left: 1.5%;
+	}
+	
+	.gall {
+		margin-left: 10%;
+	}
+	
+	q {
+		margin-left: 0;
+	}
+	
+	cite {
+		margin-left: 0;
+		
+	}
+	
+	.image {
+		width: 200px;
+		height: 100px;
+	}
+	
+	/* pagina Giappone */
+	h4 .container {
+		margin-left: 13%;
+	}
+	
+	h4 .image {
+		width: 200px;
+	}
+	
+	.imgCibo {
+		width: 150px;
+		height: 150px;
+	}
+	
+	.titoloCibo {
+		font-size: 30px;
+		float: none;
+	}
+	
+	.testoCibo {
+	font-family: 'Raleway', cursive;
+	font-size: 20px;
+	color: #202020;
+	float: none;
+}
+	
+	/* pagina Viaggi */
+	.imgViaggi {
+	width: 200px;
+	height: auto;
+	margin: 1%;
+	margin-left: 10%;
+	margin-top: 4%;
+	text-align: center;
+	cursor: pointer;
+}
+
+	.imgViaggi2 {
+		display: none;
+	}
+	
+	.viaggi {
+	width: 90%;
+	font-size: 17px;
+	color: #202020;
+	padding: 2%;
+	margin: 1%;
+	
+}
+
+table {
+	display: none;
+}
+
+.info {
+	display: block;
+}
+}
+
+/* SCHERMI GRANDI*/
+
+@media screen and (min-width: 1800px) {
+	/* pagina Index */
+	
+	#foto {
+		height: 400px;
+		width: 50%;
+		margin-left: 25%;
+	}
+	
+	.gall {
+		width: 70px;
+		height: 70px;
+	}
+	
+	p {
+		font-size: 20px;
+	}
+	
+	q {
+		font-size: 30px;
+		margin-left: 30%;
+	}
+	
+	cite {
+		margin-left: 80%;
+		font-size: 20px;
+	}
+	
+	.image {
+		width: 500px;
+		height: 300px;
+		margin-left: 25%;
+	}
+	
+	
+	.imgViaggi {
+		width: 300px;
+		margin: 3%;
+	}
+	
+	/* pagina Giappone */
+
+h4 .image {
+  
+	width: 400px;
+	height: 250px;
+	margin: 1%;
+	
+}
+
+	
+h4 .container {
+		margin-left: 7%;
+}
+
+	
+.h1Giappone {
+		font-size: 70px;
+}
+	
+#imgGiappone2  {
+	display: none;
+}
+
+.imgCibo {
+	width: 600px;
+	height: 600px;
+	margin: 2%;
+	border: white 2px solid;	
+}
+
+	
+.testoGiappone {
+		width: 80%;
+		height: 100%;
+		margin: 5%;
+		padding: 3%;
+		padding-bottom: 8%;	
+		border: purple 2px solid;
+		color: #202020;
+		margin-left: 10%;
+}
+	
+}
+
