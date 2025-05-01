@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<title>GiapponeInsieme</title>
+	<meta charset="utf-8" />
+	<meta name="author" content="Sara Seidita" />
+	<script src="./js/menu.js"></script>
+	<link rel="stylesheet" href="./css/index.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	
+	<script src="./js/quiz.js"></script>
+
+</head>
+
+<body id="bodyQuiz">
+
+	<header>	
+	<a href="index.html"><img src="./img/logos.png" alt="logo"></a>
+	<!-- MENU -->
+	<input type="button" value="&#9776;" id="btn"/>
+	<div id="menu" class="sidenav">
+		<button class="chiudi" id="chiudi">&#9776;</button>
+	<hr />
+	<a href="index.html">Home</a><hr/>
+	<a href="giappone.html">Giappone</a><hr />
+	<a href="viaggi.html">Viaggia con noi!</a><hr />
+	<a href="quiz.html">Quiz</a><hr />
+	<a href="about.html">Contatti e about</a><hr />
+	</div>
+	</header>
+
+	<article class="articoloQuiz">
+	
+
+	    <div class="quiz">
+		
+			<div class="titoloQuiz">Quiz</div>
+			<div class="testoQuiz">Vediamo quante ne sai!</div>
+				<span id ="numeroDomandaCorrente" class="testoDomanda"></span> <br/>
+				<br/>
+				<span id ="testoDomandaCorrente" class="testoDomandaCorrente"></span> <br/>
+				<br/>
+			
+			<div class="risposte">
+					<input type="radio" name="risposte" id ="risposta0"/>
+					<span id ="testoRisposta0"></span>
+					<br/>
+					<input type="radio" name="risposte" id ="risposta1"/>
+					<span id ="testoRisposta1"></span>
+					<br/>
+					<input type="radio" name="risposte" id ="risposta2"/>
+					<span id ="testoRisposta2"></span>
+					<br/>
+					<input type="radio" name="risposte" id ="risposta3"/>
+					<span id ="testoRisposta3"></span>
+					<br/>
+					<input type="button" value=">" id ="avantiquiz" />
+					<input type = "button" value = "Restart" id ="inizia"/><br/>
+			</div>
+				<br/>
+				<span id ="risultato" class="risultato"></span>
+				<br/>
+		</div>
+		<br/>
+		<br/>
+
+	</article>
+	
+	
+		<footer>
+		<br />
+		<div>
+			<address>
+			Questo sito è stato realizzato da <em>Sara Seidita</em>
+			</address>
+		</div>
+		</footer>	
+		
+	</body>
+
+</html>
